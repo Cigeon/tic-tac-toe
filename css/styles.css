@@ -1,18 +1,24 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
 
 .wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: auto;
-    height: fit-content;
+    height: auto;
     min-width: 400px;
+    height: 100%;
+    margin: 0;
+    background-color: #FF7F50;
 }
 
 .header-wrap {
     display: flex;
     justify-content: center;
     align-content: center;
-    background-color: #FF7F50;
     width: auto;
     height: 150px;
 }
@@ -33,7 +39,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #FF7F50;
     width: auto;
     height: 120px;
 }
@@ -56,10 +61,38 @@
 }
 
 .grid-wrap {
+    padding-top: 20px;
+    width: auto;
+    height: auto;
+    min-width: 400px;
+}
+
+.grid-row {
     display: flex;
-    background-color: brown;
-    width: 200px;
-    height: 200px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.grid-cell {
+    width: 120px;
+    height: 120px;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 64px;
+    color: white;
+    text-shadow: 3px 3px rgb(134, 134, 134);
+    text-align: center;
+    vertical-align: middle;   
+}
+
+.grid-cell-ver {
+    border-right: white 7px dashed;
+    border-left: white 7px dashed;
+}
+
+.grid-cell-hor {
+    border-top: white 7px dashed;
+    border-bottom: white 7px dashed;
 }
 
 .show {
