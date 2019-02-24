@@ -6,9 +6,8 @@ require([
     'dojo/_base/fx',
     'dojo/dom-style',
     'dojo/mouse',
-    'dojo/back',
     'dojo/domReady!'
-], function (dom, on, query, domClass, fx, domStyle, mouse, back) {
+], function (dom, on, query, domClass, fx, domStyle, mouse) {
 
     var player1Name = "",
         player2Name = "",
