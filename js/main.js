@@ -17,8 +17,8 @@ require([
         changePlayer = false,
         session = sessionStorage,
         lastCellChanged = "",
-        cellsHoverHaldle = {},
-        cellsLeaveHaldle;
+        cellsHoverHandle = {},
+        cellsLeaveHandle = {};
 
     var player1InputDiv = dom.byId('player1InputDiv'),
         player1Input = dom.byId('player1Input'),
@@ -168,7 +168,7 @@ require([
     });
 
     function addHoverEffect(){
-        cellsHoverHaldle = cells.on(mouse.enter, function(e){
+        cellsHoverHandle = cells.on(mouse.enter, function(e){
             domClass.add(e.target.id, 'grid-cell-hover');      
         });
         cellsLeaveHandle = cells.on(mouse.leave, function(e){
@@ -192,7 +192,7 @@ require([
         if(draw){
             statusText.innerHTML = 'Draw!';
             domClass.remove(statusBar.id, 'hidden'); 
-            cellsHoverHaldle.remove();
+            cellsHoverHandle.remove();
             cellsLeaveHandle.remove();
         }
         session.setItem('status', statusText.innerHTML);
@@ -259,7 +259,7 @@ require([
 
         if (line1 || line2 || line3 || line4 || line5 || line6 || line7 || line8){
                 domClass.remove(statusBar.id, 'hidden'); 
-                cellsHoverHaldle.remove();
+                cellsHoverHandle.remove();
                 cellsLeaveHandle.remove();
                 return true;
             } else {
