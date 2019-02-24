@@ -147,21 +147,24 @@ require([
                 session[`cell${(i+1)}`] = "";
             }
         }
-        session.removeItem('started')
+        session.removeItem('started');
     });
 
     on(newGameButton, 'click', function(e){
         statusText.innerHTML = "";        
         domClass.add(statusBar.id, 'hidden');
+        domClass.add(grid.id, 'hidden');
         cells.forEach(e => {
             e.innerHTML = "";
             domClass.remove(e, 'grid-cell-hover');
         }); 
         player1Text.innerHTML = "";
+        player1Name = "";
         fx.fadeIn({ node: player1InputDiv}).play();
         player2Text.innerHTML = "";
+        player2Name = "";
         fx.fadeIn({ node: player2InputDiv}).play();
-        session.clear();
+        session.clear();        
     });
 
     function addHoverEffect(){
