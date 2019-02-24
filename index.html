@@ -21,7 +21,7 @@
                         <button id="player1Button" class="btn btn-secondary" type="button">OK</button>
                     </div>                    
                 </div>  
-                <p id="player1Text" class="text hidden player-text"></p>              
+                <p id="player1Text" class="text player-text"></p>              
             </div>            
 
             <div class="player">
@@ -31,33 +31,46 @@
                         <button id="player2Button" class="btn btn-secondary" type="button">OK</button>
                     </div>                    
                 </div>
-                <p id="player2Text" class="text hidden player-text"></p>
+                <p id="player2Text" class="text player-text"></p>
             </div>
 
         </div>
 
-        <div class="grid-wrap">
+        <div id="grid" class="grid-wrap hidden">
             <div class="container">
                 <div class="row grid-row">
-                    <div class="grid-cell">X</div>
-                    <div class="grid-cell grid-cell-ver">X</div>
-                    <div class="grid-cell">X</div>
+                    <div id="cell1" class="grid-cell"></div>
+                    <div id="cell2" class="grid-cell grid-cell-ver"></div>
+                    <div id="cell3" class="grid-cell"></div>
                 </div>
             </div>
             <div class="container">
                 <div class="row grid-row">
-                    <div class="grid-cell grid-cell-hor">O</div>
-                    <div class="grid-cell grid-cell-hor grid-cell-ver">O</div>
-                    <div class="grid-cell grid-cell-hor">O</div>
+                    <div id="cell4" class="grid-cell grid-cell-hor"></div>
+                    <div id="cell5" class="grid-cell grid-cell-hor grid-cell-ver"></div>
+                    <div id="cell6" class="grid-cell grid-cell-hor"></div>
                 </div>
             </div>
             <div class="container">
                 <div class="row grid-row">
-                    <div class="grid-cell">X</div>
-                    <div class="grid-cell grid-cell-ver">X</div>
-                    <div class="grid-cell">X</div>
+                    <div id="cell7" class="grid-cell"></div>
+                    <div id="cell8" class="grid-cell grid-cell-ver"></div>
+                    <div id="cell9" class="grid-cell"></div>
+                </div>
+            </div>            
+        </div>
+        <div id="status-bar" class="status-wrap hidden">
+            <div class="container">
+                <div class="row grid-row">
+                    
                 </div>
             </div>
+            <div class="container">
+                <div class="row grid-row">
+                    <button id="againButton" class="btn btn-secondary status-button" type="button">AGAIN</button>
+                    <button id="newGameButton" class="btn btn-secondary status-button" type="button">NEW GAME</button>
+                </div>
+            </div>            
         </div>
     </div>
 
