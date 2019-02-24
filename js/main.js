@@ -155,6 +155,7 @@ require([
         domClass.add(statusBar.id, 'hidden');
         cells.forEach(e => {
             e.innerHTML = "";
+            domClass.remove(e, 'grid-cell-hover');
         }); 
         player1Text.innerHTML = "";
         fx.fadeIn({ node: player1InputDiv}).play();
