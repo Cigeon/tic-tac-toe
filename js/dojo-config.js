@@ -1,6 +1,6 @@
 var dojoConfig = {
     async: true,
-    baseUrl: '.',
+    baseUrl: './js/lib/',
     packages: [
         'dojo',
         'dijit',
