@@ -18,7 +18,7 @@ html, body {
     justify-content: center;
     align-content: center;
     width: auto;
-    height: 150px;
+    height: 130px;
 }
 
 .title {
@@ -37,7 +37,7 @@ html, body {
     flex-wrap: wrap;
     justify-content: center;
     width: auto;
-    height: 90px;
+    height: 80px;
 }
 
 .player {
