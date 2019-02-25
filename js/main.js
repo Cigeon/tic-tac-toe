@@ -90,6 +90,12 @@ require([
         }
     }
 
+    window.onpopstate = function() {
+        dom.byId(lastCellChanged).innerHTML = "";
+        session.setItem(lastCellChanged, "");
+        changePlayer = !changePlayer;        
+    }; 
+
     on(player1Input, 'change', function(e){
         player1Name = e.target.value;
     });
@@ -129,6 +135,7 @@ require([
             session.setItem(e.target.id, e.target.innerHTML);
             session.setItem('started', true);
             lastCellChanged = e.target.id;
+            history.pushState({}, ''); 
             checkWinner();
         }        
     });
