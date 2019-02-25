@@ -146,6 +146,7 @@ require([
                 session[`cell${(i+1)}`] = "";
             }
         }
+        addHoverEffect(); 
         session.removeItem('started');
     });
 
@@ -163,6 +164,7 @@ require([
         player2Text.innerHTML = "";
         player2Name = "";
         fx.fadeIn({ node: player2InputDiv}).play();
+        addHoverEffect(); 
         session.clear();        
     });
 

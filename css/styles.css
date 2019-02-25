@@ -5,7 +5,7 @@ html, body {
 
 .wrapper {
     width: auto;
-    height: auto;
+    /*height: auto;*/
     min-width: 400px;
     height: 100%;
     margin: 0;
@@ -60,7 +60,8 @@ html, body {
     padding-top: 20px;
     width: auto;
     height: auto;
-    min-width: 400px;    
+    min-width: 400px;
+    background-color: #FF7F50;    
 }
 
 .grid-row {
@@ -99,13 +100,11 @@ html, body {
     height: auto;
     width: 100%;
     text-align: center;
-    margin-top: 30px;
-
-
+    padding: 15px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+    background-color: #FF7F50;
 }
 
 #statusText {
